@@ -1,8 +1,8 @@
 {
 	"apps": [
 		{
-			"name": "node-app",
-			"script": "app.js",
+			"name": "server",
+			"script": "server.js",
 			// "instance": 2,
 			"env": {
 				"COMMON_VARIABLE": true,
@@ -15,11 +15,11 @@
 	"deploy": {
 		"production": {
 			"user": "Administrator",
-			"host": ["47.104.190.42"],
-			"port": "9001",
-			"ref": "gitee/master",
-			"repo": "git@gitee.com:Ageek-gitee/note-site.git",
-			"path": "C:\\node-app\\test-server",
+			"host": ["127.0.0.1"],
+			"port": "22",
+			"ref": "github/master",
+			"repo": "git@github.com:Ageek-git/test-server.git",
+			"path": "/www/production",
 			"ssh_options": "StrictHostKeyChecking=no",
 			// "post-deploy": "npm install",
 			"pre-deploy-local": "echo 'Deploy done!'",
